@@ -35,7 +35,9 @@ if(isset($_POST['save']))
 	$documentt=$_POST['document'];
 
 	$sql_query="INSERT INTO std VALUES('$first_name','$father_name','$roll_no','$email','$phone','$batch','$dept','$programm','$documentt','$challan','$paymentType')";
-	if(mysqli_query($conn,$sql_query))
+	
+    
+    if(mysqli_query($conn,$sql_query))
 	{
 		
 		
